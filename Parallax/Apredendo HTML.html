@@ -1,0 +1,101 @@
+<!DOCTYPE html>		
+<html lang = "pt-br">
+
+	<head>
+		<title>Aprendendo HTML</title>
+		<link type = "text/css" rel = "stylesheet" href = "estilos.css">
+	</head>
+	
+	<body>
+		<header>
+			<nav>
+				<ul>
+					<li><a href = "#banner">home</a></li>
+					<li><a href = "#sobre">sobre</a></li>
+					<li><a href = "#linguagens">linguagens</a></li>
+					<li><a href = "#materiais">materiais</a></li>
+					<li><a href = "#contato">contato</a></li>
+				</ul>
+			</nav>
+		</header>
+		
+		<section id = "banner" class = "banner">
+			<img src = "banner.png">
+		</section>
+		
+		<section id = "sobre" class = "flexivel">
+			<article class = "borda0" data-anima="esquerda">
+				Sobre algo
+			</article>
+			<article class = "borda0" data-anima="direita">
+				Sobre outro algo
+			</article>
+		</section>
+		
+		<section id = "linguagens" class = "flexivel">
+			<article class = "borda0 containerCursos" data-anima="esquerda">
+				<img src = "modal1.jpg" class = "mini" onclick = "cliqueModal(this)" alt = "Primeira imagem">
+				<img src = "modal2.jpg" class = "mini" onclick = "cliqueModal(this)" alt = "Pode escrever qualquer coisa">
+				<img src = "modal3.jpg" class = "mini" onclick = "cliqueModal(this)" alt = "Curso de programa&ccedil;&atilde;o">
+				<img src = "modal4.jpg" class = "mini" onclick = "cliqueModal(this)" alt = "Aplicativos em C#">
+			</article>
+			<article class = "borda0 containerCursos" data-anima="centro">
+				<img src = "modal5.jpg" class = "mini" onclick = "cliqueModal(this)" alt = "HTML">
+				<img src = "modal6.jpg" class = "mini" onclick = "cliqueModal(this)" alt = "CSS">
+				<img src = "modal7.jpg" class = "mini" onclick = "cliqueModal(this)" alt = "Javascript">
+				<img src = "modal8.jpg" class = "mini" onclick = "cliqueModal(this)" alt = "GIT">
+			</article>
+			<article class = "borda0 containerCursos" data-anima="direita">
+				<img src = "modal9.jpg" class = "mini" onclick = "cliqueModal(this)" alt = "SQL">
+				<img src = "modal10.jpg" class = "mini" onclick = "cliqueModal(this)" alt = "Typescrpt">
+				<img src = "modal11.jpg" class = "mini" onclick = "cliqueModal(this)" alt = ".NET">
+				<img src = "modal12.jpg" class = "mini" onclick = "cliqueModal(this)" alt = "SOLID">
+			</article>
+		</section>
+		
+		<section class = "parallax p1">
+			<article>
+				EFEITO PARALAXA<br>EFEITO PARALAXA<br>EFEITO PARALAXA<br>EFEITO PARALAXA<br>EFEITO PARALAXA
+			</article>
+		</section>
+		
+		<section id = "materiais" class = "flexivel">
+			<article class = "borda0" data-anima="esquerda">
+				Imagem
+			</article>
+			<article class = "borda0" data-anima="direita">
+				Link
+			</article>
+		</section>
+		
+		<section class = "parallax p2">
+			<article>
+				EFEITO PARALAXA<br>EFEITO PARALAXA<br>EFEITO PARALAXA<br>EFEITO PARALAXA<br>EFEITO PARALAXA
+			</article>
+		</section>
+		
+		<section id = "contato" class = "flexivel">
+			<article class = "borda0" data-anima="esquerda">
+				Esquerda
+			</article>
+			<article class = "borda0" data-anima="centro">
+				Centro
+			</article>
+			<article class = "borda0" data-anima="direita">
+				Direita
+			</article>
+		</section>
+		
+		<footer>
+		</footer>
+		
+		<div id = "janelaModal" class = "janelaModal escondeJanelaModal">
+			<span id = "btnFechar" class = "fecharModal">x</span>
+			<img id = "imgModal" class = "imgModal">
+			<div id = "txtModal" class = "txtModal"></div>
+		</div>
+		
+		<script type = "text/javascript" src = "scripts.js"></script>
+	</body>
+	
+</html>
